@@ -27,7 +27,7 @@ model = GenerativeModel("gemini-2.0-flash-001")
 
 temperature=(1)
 prompt="""
-who is the richest person in africa as of 2025
+who is the richest person in africa as of 2024
 
 """
 config = GenerationConfig(temperature=1.0)
