@@ -22,6 +22,6 @@ PCA_model=PCA(n_components=2) #number of dimensions to keep set to 2
 PCA_model.fit(embeddings_array)
 
 new_embeddings=PCA_model.transform(embeddings_array)
-print("shape: " +str(new_embeddings.shape))
+print("shape (just seeing in 2D): " +str(new_embeddings.shape))
 
 plot_2D(new_embeddings[:,0],new_embeddings[:,1],text_list)
