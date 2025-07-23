@@ -11,8 +11,7 @@ Credentials=Credentials.from_service_account_file(
 )
 
 if Credentials.expired:
-  Credentia
-  ls.refresh(Request())
+  Credentials.refresh(Request())
 
 PROJECT_ID="vertex-ai-466717"
 REGION="us-central1"
@@ -25,7 +24,7 @@ vertexai.init(project=PROJECT_ID,location=REGION,credentials=Credentials)
 model = GenerativeModel("gemini-2.0-flash-001")
 
 prompt="""
-Patrick Ty is a 26-year-old teacher living in Texas. He has 1 child and loves tech. His email is cantgive@gmail.com.
+Patrick Ty is a 26-year-old teacher living in Texas. He has 1 child and loves tech. His email is can'tgive@gmail.com.
 
 
 Create a simple table with two columns: Field and Value showing the key details.
